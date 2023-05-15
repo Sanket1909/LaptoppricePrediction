@@ -1,0 +1,179 @@
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-bottom-color: #4CAF50;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Button animation */
+@keyframes button-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+button {
+    animation: button-pulse 2s infinite;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f4a261;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+/* Style for specific inputs */
+#weight,
+input[name="screen_size"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+#weight:focus,
+input[name="screen_size"]:focus {
+    border-bottom-color: #4CAF50;
+}
+body {
+    height: 100%;
+}
+body {
+    background-color: transparent;
+}
+body {
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(to right, #00c3ff, #ffff1c, #ff006e);
+    background-size: 600% 600%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.color-change h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(250, 245, 245, 0.5);
+    margin-top: 50px;
+    
+  }
+#typing-header {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+  }
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    text-align: center;
+    animation: typing 10s steps(40, end) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+  
+  
+  
+
+
+  
+  
+  

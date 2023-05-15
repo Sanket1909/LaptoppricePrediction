@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+
+
+</head>
+<body>
+ 
+  <h1 class="typing">Laptop Price Prediction</h1>
+<h1>Capstone 2</h1>
+
+    
+    
+      
+     <form action="/predict" method="post">
+      <table>
+          
+            <tr>
+                <td><label for="company">Brand:</label></td>
+                <td>
+                    <select id="company" name="company">
+                        {% for value in df['Company'].unique() %}
+                            <option value="{{ value }}">{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="type">Type:</label></td>
+                <td>
+                    <select id="type" name="type">
+                        {% for value in df['TypeName'].unique() %}
+                            <option value="{{ value }}">{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ram">RAM (in GB):</label></td>
+                <td>
+                    <select id="ram" name="ram">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="24">24</option>
+                        <option value="32">32</option>
+                        <option value="64">64</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="weight">Weight:</label></td>
+                <td>
+                    <input id="weight" name="weight" type="number" step="0.01" min="0" placeholder="Enter weight in kg">
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><label for="resolution">Resolution:</label></td>
+                  <td>
+                  <select id="resolution" name="resolution">
+                  <option value="1366x768">1366x768</option>
+                  <option value="1600x900">1600x900</option>
+                  <option value="1920x1080">1920x1080</option>
+                  <option value="2560x1440">2560x1440</option>
+                  <option value="3200x1800">3200x1800</option>
+                  <option value="3840x2160">3840x2160</option>
+                  <option value="4096x2160">4096x2160</option>
+                  <option value="5120x2880">5120x2880</option>
+                  <option value="7680x4320">7680x4320</option>
+                  </select>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><label for="touchscreen">Touchscreen:</label></td>
+                  <td>
+                  <select id="touchscreen" name="touchscreen">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                  </select>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td><label for ="ips">IPS:</label></td>
+                    <td>
+                        <select name="ips">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </td>
+                </tr>
+                  <tr>
+                  <td><label for="cpu">CPU:</label></td>
+                  <td>
+                  <select id="cpu" name="cpu">
+                  {% for value in df['Cpu_brand'].unique() %}
+                  <option value="{{ value }}">{{ value }}</option>
+                  {% endfor %}
+                  </select>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><label for="gpu">GPU:</label></td>
+                  <td>
+                  <select id="gpu" name="gpu">
+                  {% for value in df['Gpu brand'].unique() %}
+                  <option value="{{ value }}">{{ value }}</option>
+                  {% endfor %}
+                  </select>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td><label for="ssd">SSD (in GB):</label></td>
+                    <td>
+                        <select name="ssd">
+                            <option value="0">0</option>
+                            <option value="128">128</option>
+                            <option value="256">256</option>
+                            <option value="512">512</option>
+                            <option value="1024">1024</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for = "hdd">HDD (in GB):</label></td>
+                    <td>
+                        <select name="hdd">
+                            <option value="0">0</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                  <td><label for = "screen_size">Screen Size:</label></td>
+                  <td>
+                      <input type="number" step="0.1" name="screen_size">
+                  </td>
+              </tr>
+               
+                  <tr>
+                  <td><label for="os">Operating System:</label></td>
+                  <td>
+                  <select id="os" name="os">
+                  {% for value in df['os'].unique() %}
+                  <option value="{{ value }}">{{ value }}</option>
+                  {% endfor %}
+                  </select>
+                  </td>
+                  </tr>
+                  </table>
+                  <input type="submit" value="Predict">
+                  </form>
+                  
+                  </body>
+                  </html>
+                  
+
+
+
+
+
+
+
+
+
