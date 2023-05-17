@@ -6,7 +6,7 @@ Laptop Price Prediction
 
 This is a web application that predicts the price of a laptop based on the input parameters such as the company, type, RAM, weight, touchscreen availability, IPS display availability, screen size, resolution, CPU, HDD size, SSD size, GPU, and OS. The machine learning model is trained on the Laptop Price dataset which is then used to predict the price of the laptop.
 
-
+## Live Demo :- https://sanketlaptopprice.azurewebsites.net/
 
 ## Project Files
 
