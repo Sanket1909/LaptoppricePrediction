@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'sanketpatelprice'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E4B3AD2DF70846AEB632EB4041D888B0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03C86904C44548829ACBE3272583FFE6 }}
