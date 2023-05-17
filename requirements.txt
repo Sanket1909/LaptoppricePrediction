@@ -1,6 +1,5 @@
 catboost
 Flask
-numpy
 pandas
 scikit-learn
 
