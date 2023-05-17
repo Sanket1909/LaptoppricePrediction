@@ -3,7 +3,7 @@ numpy
 scikit-learn
 catboost
 pandas
-pickle
+
 
 
 
