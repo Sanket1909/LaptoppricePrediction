@@ -2,8 +2,8 @@ Flask
 numpy
 catboost
 gunicorn
-scikit-learn
-pandas
+scikit-learn==1.1.2
+pandas==1.5.1
 
 
 
