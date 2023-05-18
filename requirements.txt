@@ -3,6 +3,7 @@ numpy
 catboost
 gunicorn
 scikit-learn
+pandas
 
 
 
