@@ -111,6 +111,7 @@ numpy
 oauthlib
 opencv-python
 opt-einsum
+pypiwin32
 packaging
 pandas
 pandocfilters
