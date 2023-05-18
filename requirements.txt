@@ -136,7 +136,7 @@ pylint
 Pympler
 PyMySQL
 pyparsing
-pypiwin32
+pypiwin32==223
 pyrsistent
 PySimpleGUI
 python-dateutil
