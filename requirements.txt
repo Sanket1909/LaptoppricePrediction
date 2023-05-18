@@ -157,7 +157,6 @@ scikit-learn
 scipy
 Send2Trash
 six
-sklearn
 smmap
 sniffio
 soupsieve==2.3.2.post1
