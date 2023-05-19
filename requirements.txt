@@ -4,6 +4,7 @@ numpy
 catboost
 scikit-learn
 pandas
+gunicorn
 
 
 
