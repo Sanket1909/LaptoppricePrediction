@@ -23,7 +23,7 @@ This is a web application that predicts the price of a laptop based on the input
 4. Run python app.py to start the Flask application.
 5. Open a web browser and go to http://localhost:5000/ to access the application.
 
-## Demo
+## Demo 
 
 ![Demo Gif](https://github.com/Sanket1909/LaptoppricePrediction/blob/master/sanketlaptop.gif)
 
